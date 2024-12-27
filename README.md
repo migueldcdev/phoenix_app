@@ -37,6 +37,7 @@ config :app, App.Repo,
 
 
 ```shell
+sudo service postgresql start
 mix phx.new app
 cd app
 
