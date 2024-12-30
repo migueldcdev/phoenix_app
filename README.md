@@ -25,8 +25,8 @@ CREATE USER myuser WITH PASSWORD 'mypassword';
 GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 ```
 Change config in app/config/dev.exs
-
-config :app, App.Repo,
+```code
+  config :app, App.Repo,
   username: "myuser",
   password: "mypassword",
   hostname: "localhost",
@@ -34,6 +34,7 @@ config :app, App.Repo,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
+```
 
 
 ```shell
